@@ -3,24 +3,25 @@
 t_list *ra(t_list *a)
 {
     ft_printf("\n     ra     ");
+
     t_list *head = a;
-    t_list *last_nbr = a;
-    int c;
-    while(last_nbr->next != NULL)
-    {
-        last_nbr = last_nbr ->next;
+    t_list *last_nbr = ft_lstlast(a);
+    int first_data = head->data;
+
+    while (head->next != NULL) {
+        head->data = head->next->data;
+        head = head->next;
     }
-    c = last_nbr->data;
-    last_nbr->data = head->data;
+
+    last_nbr->data = first_data;
+
+    t_list *current = a;
+    while (current != NULL)
     {
-        last_nbr->data = c;
-        c = last_nbr->data;
+        ft_printf("\n%d", current->data);
+        current = current->next;
     }
-    while(last_nbr != NULL)
-    {
-        ft_printf("\n%d",a->data);
-        a = a->next;
-    }
-    ft_printf("_____________\na     |b     \n-------------");
-    return(a);
+    ft_printf("\n_____________\na     |b     \n-------------");
+
+    return a;
 }

@@ -1,21 +1,10 @@
-#  |  |  ___ \    \  |         |
-#  |  |     ) |  |\/ |   _  |  |  /   _ 
-# ___ __|  __/   |   |  (   |    <    __/ 
-#    _|  _____| _|  _| \__,_| _|\_\ \___|
-#                              by jcluzet
-################################################################################
-#                                     CONFIG                                   #
-################################################################################
+
 
 NAME        := push_swap
 CC        := gcc
 FLAGS    := -Wall -Wextra -Werror 
-################################################################################
-#                                 PROGRAM'S SRCS                               #
-################################################################################
 
 SRCS        :=      main.c \
-                          push_swap.c \
                           printf/utils.c \
                           printf/libftprintf.c \
                           printf/utils1.c \
@@ -37,13 +26,10 @@ SRCS        :=      main.c \
                           libft/ft_memcmp.c \
                           libft/ft_lstnew_bonus.c \
                           libft/ft_strchr.c \
-                          libft/ft_lstiter_bonus.c \
                           libft/ft_substr.c \
                           libft/ft_memmove.c \
                           libft/ft_lstadd_front_bonus.c \
                           libft/ft_striteri.c \
-                          libft/ft_lstclear_bonus.c \
-                          libft/ft_lstmap_bonus.c \
                           libft/ft_tolower.c \
                           libft/ft_itoa.c \
                           libft/ft_isdigit.c \
@@ -57,12 +43,11 @@ SRCS        :=      main.c \
                           libft/ft_atoi.c \
                           libft/ft_lstsize_bonus.c \
                           libft/ft_toupper.c \
-                          libft/ft_lstdelone_bonus.c \
                           libft/ft_isprint.c \
                           libft/ft_split.c \
                           src/movements/swap/sa.c \
-                          src/movements/rotate/ra.c
-                          
+                          src/movements/rotate/ra.c \
+                          src/movements/rotate/rra.c
 OBJS        := $(SRCS:.c=.o)
 
 .c.o:
