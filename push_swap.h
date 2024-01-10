@@ -17,6 +17,7 @@ int	ft_atoi(const char *str);
 int		ft_printf(char const *str, ...);
 t_list *sa(t_list *a);
 t_list *ra(t_list *a);
+t_list *rra(t_list *a);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstadd_front(t_list **lst, t_list *new);

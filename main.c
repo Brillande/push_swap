@@ -34,8 +34,9 @@ int main(int ac, char **av) {
 
     // Llamada a las funciones sa y ra, ajusta esto dependiendo de tu implementación real
     // Ejemplo:
-    // sa(a);
-    // ra(a);
+    sa(a);
+    ra(a);
+    rra(a);
 
     // Liberar memoria (depende de la implementación real)
     // Aquí deberías tener una función que libere la memoria de la lista
