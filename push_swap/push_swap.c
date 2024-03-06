@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emedina- <emedina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 13:25:07 by emedina-          #+#    #+#             */
-/*   Updated: 2024/02/28 13:25:07 by emedina-         ###   ########.fr       */
+/*   Updated: 2024/03/06 13:11:50 by emedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/push_swap.h"
+#include "./inc/push_swap.h"
 
 int	main(int argc, char **argv)
 {
@@ -19,7 +19,8 @@ int	main(int argc, char **argv)
 
 	a = NULL;
 	b = NULL;
-	if (argc == 1 || (argc == 2 && !argv[1][0]))
+	if (argc == 1 || (argc == 2 && !argv[1][0]) || (argc == 2
+			&& argv[1][0] == ' '))
 		return (1);
 	else if (argc == 2)
 		argv = ft_split(argv[1], ' ');
@@ -34,5 +35,6 @@ int	main(int argc, char **argv)
 			sort_list(&a, &b);
 	}
 	free_list(&a);
+	free_errors(&a);
 	return (0);
 }

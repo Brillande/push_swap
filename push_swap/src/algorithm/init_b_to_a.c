@@ -6,7 +6,7 @@
 /*   By: emedina- <emedina-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/28 12:51:38 by emedina-          #+#    #+#             */
-/*   Updated: 2024/02/28 12:52:01 by emedina-         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:25:27 by emedina-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static void	set_target_b(t_a_or_b *a, t_a_or_b *b)
 			current_a = current_a->next;
 		}
 		if (best_match_index == LONG_MAX)
-			b->target_node = biggest_node(a);
+			b->target_node = lower_node(a);
 		else
 			b->target_node = target_node;
 		b = b->next;
