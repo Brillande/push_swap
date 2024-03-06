@@ -49,7 +49,7 @@ SRCS        :=      printf/utils.c \
                           libft/ft_toupper.c \
                           libft/ft_memchr.c \
                           libft/ft_isprint.c \
-                          src/push_swap.c \
+                          push_swap.c \
                           src/movements/rev_rotate/rrb.c \
                           src/movements/rev_rotate/rra.c \
                           src/movements/rev_rotate/rrr.c \
